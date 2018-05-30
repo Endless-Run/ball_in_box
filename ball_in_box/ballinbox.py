@@ -66,7 +66,8 @@ def solve(three_bounds):
         ]
     return fsolve(f,[1.0,1.0,0.0])
 # test:
-def ball_in_box(m, blockers): for x in blockers:
+def ball_in_box(m, blockers): 
+    for x in blockers:
         tmp = list(x)
         tmp.append(0)
         b = Bound(tmp[0],tmp[1],tmp[2])
